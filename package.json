@@ -1,0 +1,22 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qianmarv/leetcode.git"
+  },
+  "author": "qianmarv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qianmarv/leetcode/issues"
+  },
+  "homepage": "https://github.com/qianmarv/leetcode#readme",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
