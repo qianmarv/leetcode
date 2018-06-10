@@ -14,7 +14,7 @@ module.exports = {
         var map = {};
         for(var i = 0; i < nums.length; i++){
             var v = target - nums[i];
-            if(typeof map[v] !== "undefined"){
+            if( map[v] !== undefined){
                 return [map[v], i];
             }
             map[nums[i]] = i;
