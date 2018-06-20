@@ -38,25 +38,24 @@ module.exports = {
             nums2 = nums1;
             nums1 = tmp;
         }
-        console.log(nums1);
-        console.log(nums2);
+
         let m = nums1.length;
         let n = nums2.length;
         let iLeft  = 0;
         let iRight =  m-1;
         while(true){
             let i = Math.floor((iLeft + iRight)/2); // initial
-            let j = Math.floor((m+n-i*2)/2);
+            let j = Math.floor((m+n-i*2)/2)-1;
             console.log("i="+i+";j="+j);
-            if( i === m || i === 0 ||
-                (nums1[i] <= nums2[j+1] &&
-                 nums2[j] <= nums1[i+1])){//TODO Boundary i = m!!
-                //find it
-                return [i,j];
+            if(i === -1){
+                return [nums2[j-1], nums2[j]];
+            }else if( nums1[i] <= nums2[j+1] &&
+                     (i === m - 1 || nums2[j] <= nums1[i+1])){//TODO Boundary i = m!!
+                return [nums1[i],nums2[j]];
             }else if(nums1[i] > nums2[j+1]){//  Move to left
-                iRight = i;
+                iRight = i - 1;
             }else if(nums2[j] > nums1[i+1]){ // Move to Right
-                iLeft = i;
+                iLeft = i + 1;
             }
         }
     }
