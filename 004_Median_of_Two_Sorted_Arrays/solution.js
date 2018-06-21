@@ -21,7 +21,7 @@ module.exports = {
 
         let nums = nums1.concat(nums2);
         nums.sort(function(a,b){return a - b});
-        console.log(nums);
+
         let len  = nums.length;
         if(len % 2 === 0){
             let n  = len / 2;
@@ -43,20 +43,38 @@ module.exports = {
         let n = nums2.length;
         let iLeft  = 0;
         let iRight =  m-1;
+        let nums = [];
         while(true){
             let i = Math.floor((iLeft + iRight)/2); // initial
             let j = Math.floor((m+n-i*2)/2)-1;
-            console.log("i="+i+";j="+j);
+            // console.log("i="+i+";j="+j);
             if(i === -1){
-                return [nums2[j-1], nums2[j]];
-            }else if( nums1[i] <= nums2[j+1] &&
-                     (i === m - 1 || nums2[j] <= nums1[i+1])){//TODO Boundary i = m!!
-                return [nums1[i],nums2[j]];
+                if(j === 0){
+                    return nums2[j];
+                }else{
+                    nums = [nums2[j-1], nums2[j]];
+                }
+
+                break;
+            }else if((j === n - 1 || nums1[i] <= nums2[j+1]) &&
+                     (i === m - 1 || nums2[j] <= nums1[i+1])){
+                if(j === 0){
+                    nums = [nums1[i],nums2[j]];
+                }else{
+                    nums = [Math.max(nums1[i],nums2[j-1]),nums2[j]];
+                }
+                break;
+
             }else if(nums1[i] > nums2[j+1]){//  Move to left
                 iRight = i - 1;
             }else if(nums2[j] > nums1[i+1]){ // Move to Right
                 iLeft = i + 1;
             }
+        }
+        if((m+n)%2 === 0){ //even
+            return (nums[0]+nums[1])/2;
+        }else{ //odd
+            return Math.max(nums[0],nums[1]);
         }
     }
 }
