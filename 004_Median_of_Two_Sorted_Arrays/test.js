@@ -27,5 +27,9 @@ describe("Get Median of Two Sorted Arrays", function(){
         it('[1] & [2,3,4,5,6,7,8,9,10] should return 5.5', function(){
             assert.equal(solution.findMedianSortedArrays2([1], [2,3,4,5,6,7,8,9,10]), 5.5);
         });
+        it('[] & [3] should return 3', function(){
+            assert.equal(solution.findMedianSortedArrays2([], [3]), 3);
+        });
+
     });
 });

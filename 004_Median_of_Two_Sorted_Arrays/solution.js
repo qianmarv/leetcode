@@ -33,7 +33,7 @@ module.exports = {
     // dived into two parts, with same length
     findMedianSortedArrays2: function(nums1, nums2){
         //swap
-        if(nums1.length > nums2.length){
+       if(nums1.length > nums2.length){
             let tmp = nums2;
             nums2 = nums1;
             nums1 = tmp;
@@ -58,10 +58,14 @@ module.exports = {
                 break;
             }else if((j === n - 1 || nums1[i] <= nums2[j+1]) &&
                      (i === m - 1 || nums2[j] <= nums1[i+1])){
-                if(j === 0){
+                if(j === 0 && i === 0){
                     nums = [nums1[i],nums2[j]];
-                }else{
+                }else if( i === 0 && j > 0){
                     nums = [Math.max(nums1[i],nums2[j-1]),nums2[j]];
+                }else if( i > 0 && j === 0){
+                    nums = [nums1[i], Math.max(nums1[i-1],nums2[j])];
+                }else{
+                    nums = [Math.max(nums1[i-1],nums2[j]), Math.max(nums2[j-1],nums1[i])];
                 }
                 break;
 
