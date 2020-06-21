@@ -22,26 +22,36 @@ We can easily have a quick solution based on brute force way - two level nested
 loops.
 
 Pseudo code:
-Assume the array as =array=, target as =target=
 1. Outer loop, record index as =i=
 2. Innser loop, record index as =j=
-   - compare =targe= and =arrary[i]+array[j]=
+   - compare =targe= and =nums[i]+nums[j]=
    - if equal, exit the loop, return =i= & =j=
    - else, continue the loop
 
 The time complexity of the brute force way is O(n^2), which is not good.
-** Hash map
+** Hashmap
 We can then have an idea that there's no need for two loops, if we can have a
-hash map of the numbers, we just need one loop, with =target-currentNumber=, we
+hashmap of the numbers, we just need one loop, with =target-currentNumber=, we
 can immediately get the index of second number. We only need 2n as for time
-complexity. The first time of loop is to build the hash map, we then have the
+complexity. The first time of loop is to build the hashmap, we then have the
 second loop to compare the target and retrieve the indices.
 
 Pseudo code:
-Assume the array as =array=, target as =target=
-1. First loop - build hash map with key equal to number and value to index
-2. Second loop - let taget_num = target - arrary[i], retrieve second index from
-   the hash map, if map[target_numer] exist, then return it as second index,
+1. First loop - build hashmap with key equal to number and value to index
+2. Second loop - let =taget_num = target - nums[i]=, retrieve second index from
+   the hashmap, if =map[target_numer]= exist, then return it as second index,
    else continue the loop.
 
 The time complexity is O(n)
+
+** Improved Hashmap
+We then come with the idea that there's no need to prebuid the hashmap, we could
+combine the building of hashmap and search target within exact one loop, the
+performance then could be further improved.
+
+Pseudo code:
+1. Build am empty hashmap =map=
+2. Within the loop of nums
+   - let =target_num = target - nums[i]=
+   - Check if target-num exist in map, return indices if exist
+   - if not, put current value and index into the map.

@@ -30,23 +30,20 @@
         (j 0)
         (index-map nil)
         (len (length nums)))
-    ;; Compose association map
-    (while (< i len)
-      (setq index-map
-            (append (list (cons (aref nums i) i)) index-map))
-      (incf i 1))
     ;; Try to find from association map
     (setq i 0)
-    (catch 'break
+    (catch 'found
       (while (< i len)
         (let* ((x (aref nums i))
                (y (- target x)))
           (setq j (cdr (assoc y index-map)))
           (if (numberp j)
-              (throw 'break nil)
+              (throw 'found nil)
+            (setq index-map
+                  (append (list (cons x i)) index-map))
             (incf i 1)))))
     (if (eq i len)
         nil
-      (list i j))))
+      (list j i))))
 
-(test (TwoSum2 [1 3 6 1 0 8 8 10 8 7 5 9 10] 15) '(2 11))
+(test (TwoSum2 [1 3 6 1 0 8 8 19 8 3 5 9 19] 15) '(2 11))
