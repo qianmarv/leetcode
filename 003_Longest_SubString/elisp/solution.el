@@ -56,12 +56,12 @@
     (let* ((currChar (substring str j (+ 1 j)))
            (idx (stringFind windowStr currChar)))
       (when (numberp idx) ;; Find duplicate
-        (message "Find duplicate at: %d" idx)
+        ;; (message "Find duplicate at: %d" idx)
         (when (> (length windowStr) (length maxStr))
           (setq maxStr windowStr))
         (setq windowStr (substring windowStr (+ 1 idx))))
       (setq windowStr (concat windowStr currChar))
-      (message "windowStr: %s" windowStr)
+      ;; (message "windowStr: %s" windowStr)
       (incf j 1)))
   maxStr))
 
