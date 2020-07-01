@@ -1,0 +1,136 @@
+#+TITLE: Leetcode Problems
+#+AUTHOR: Marvin
+
+* 001 Two Sum
+** Problem
+Rank: ~Easy~
+
+Given an array of integers, return *indices* of the two numbers such that they
+add up to a specific target.
+
+You may assume that each input would have *exactly* one solution, and you may
+not use the same element twice.
+
+** Example
+#+BEGIN_QUOTE
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+#+END_QUOTE
+
+** Solution
+*** Brute Force
+We can easily have a quick solution based on brute force way - two level nested
+loops.
+
+Pseudo code:
+1. Outer loop, record index as =i=
+2. Innser loop, record index as =j=
+   - compare =targe= and =nums[i]+nums[j]=
+   - if equal, exit the loop, return =i= & =j=
+   - else, continue the loop
+
+The time complexity of the brute force way is O(n^2), which is not good.
+*** Hashmap
+We can then have an idea that there's no need for two loops, if we can have a
+hashmap of the numbers, we just need one loop, with =target-currentNumber=, we
+can immediately get the index of second number. We only need 2n as for time
+complexity. The first time of loop is to build the hashmap, we then have the
+second loop to compare the target and retrieve the indices.
+
+Pseudo code:
+1. First loop - build hashmap with key equal to number and value to index
+2. Second loop - let =taget_num = target - nums[i]=, retrieve second index from
+   the hashmap, if =map[target_numer]= exist, then return it as second index,
+   else continue the loop.
+
+The time complexity is O(n)
+
+*** Improved Hashmap
+We then come with the idea that there's no need to prebuid the hashmap, we could
+combine the building of hashmap and search target within exact one loop, the
+performance then could be further improved.
+
+Pseudo code:
+1. Build am empty hashmap =map=
+2. Within the loop of nums
+   - let =target_num = target - nums[i]=
+   - Check if target-num exist in map, return indices if exist
+   - if not, put current value and index into the map.
+
+* 002 Add Two Numbers
+** Problem
+Rank ~Medium~
+
+You are given two non-empty linked lists representing two non-negative integers.
+The digits are stored in reverse order and each of their nodes contain a single
+digit. Add the two numbers and return it as a linked list.
+
+
+You may assume the two numbers do not contain any leading zero, except the
+number 0 itself.
+
+** Example
+#+BEGIN_QUOTE
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+Explanation: 342 + 465 = 807.
+#+END_QUOTE
+
+** Solution
+This problem is relatively simply if you are familiar with the basic data
+structure linked list.
+
+Just need to visit two linked list, have them sum up, in the meantime, need to
+care about whether one of the linked list is empty, and whether the sum in each
+time is bigger than 9.
+* 003 Longest Substring
+* 167 Two Sum II
+** Problem
+Rank ~Easy~
+
+Given an array of integers that is already sorted in ascending order, find two
+numbers such that they add up to a specific target number.
+
+The function twoSum should return indices of the two numbers such that they add
+up to the target, where index1 must be less than index2.
+
+*Note*:
+- Your returned answers (both index1 and index2) are not zero-based.
+- You may assume that each input would have exactly one solution and you may not
+  use the same element twice.
+
+** Example
+
+#+BEGIN_QUOTE
+Input: numbers = [2,7,11,15], target = 9
+Output: [1,2]
+Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
+#+END_QUOTE
+
+** Solution
+*** Binary Search
+We could of course still use the hasmap solution, which has both time and space
+complexity of ~O(n)~. However, since the array is sorted, with the keyword
+~sorted~, binary search jump into my mind. In this case, time complexity would
+be O(n*log(n)), which is worse, but there's no extra space needed.
+
+Pseudo Code:
+#+BEGIN_QUOTE
+1. Loop the array =numbers= with index =i=:
+   - let =y=target-numbers[i]=
+   - Do binary search of =y= on =numbers= (low = i)
+   - If found, return [i+1,j+1]
+#+END_QUOTE
+*** Two Pointers
+Apparently, ~O(n*logn)~ seems is not a good solution. We then can think
+something of ~quick sort~, which uses two points, we can adapt the same idea
+with keeping no extra space used but lowered the time complexity to ~O(n)~.
+
+Pseudo Code:
+#+BEGIN_QUOTE
+1. Put the =lo= pointer to 0 and =hi= pointer to =lengh-1=
+2. Set =y=target-numbers[lo]=, compare and move =hi= until =y>=numbers[hi]=
+3. If =y!=numbers[hi]=, move lo forward, and repeat step 2.
+#+END_QUOTE

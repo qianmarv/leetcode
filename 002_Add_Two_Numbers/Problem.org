@@ -19,3 +19,9 @@ Explanation: 342 + 465 = 807.
 #+END_QUOTE
 
 * Solution:
+This problem is relatively simply if you are familiar with the basic data
+structure linked list.
+
+Just need to visit two linked list, have them sum up, in the meantime, need to
+care about whether one of the linked list is empty, and whether the sum in each
+time is bigger than 9.
