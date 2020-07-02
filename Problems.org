@@ -1,9 +1,11 @@
 #+TITLE: Leetcode Problems
 #+AUTHOR: Marvin
 
-* 001 Two Sum
+* 001 Two Sum :Array:HashTable:
+:PROPERTIES:
+:Difficulty: Easy
+:END:
 ** Problem
-Rank: ~Easy~
 
 Given an array of integers, return *indices* of the two numbers such that they
 add up to a specific target.
@@ -60,9 +62,11 @@ Pseudo code:
    - Check if target-num exist in map, return indices if exist
    - if not, put current value and index into the map.
 
-* 002 Add Two Numbers
+* 002 Add Two Numbers :LinkedList:
+:PROPERTIES:
+:Difficulty: Medium
+:END:
 ** Problem
-Rank ~Medium~
 
 You are given two non-empty linked lists representing two non-negative integers.
 The digits are stored in reverse order and each of their nodes contain a single
@@ -89,10 +93,11 @@ Just need to visit two linked list, have them sum up, in the meantime, need to
 care about whether one of the linked list is empty, and whether the sum in each
 time is bigger than 9.
 * 003 Longest Substring
-* 167 Two Sum II
+* 167 Two Sum II :Array:TwoPointers:
+:PROPERTIES:
+:Difficulty: Easy
+:END:
 ** Problem
-Rank ~Easy~
-
 Given an array of integers that is already sorted in ascending order, find two
 numbers such that they add up to a specific target number.
 
@@ -139,10 +144,11 @@ Pseudo Code:
 2. Set =y=target-numbers[lo]=, compare and move =hi= until =y>=numbers[hi]=
 3. If =y!=numbers[hi]=, move lo forward, and repeat step 2.
 #+END_EXAMPLE
-* 445 Add Two Numbers II
+* 445 Add Two Numbers II :LinkedList:
+:PROPERTIES:
+:Difficulty: Medium
+:END:
 ** Problem
-Rank ~Medium~
-
 You are given two non-empty linked lists representing two non-negative
 integers. The most significant digit comes first and each of their nodes contain
 a single digit. Add the two numbers and return it as a linked list.
@@ -164,8 +170,10 @@ In this case, what we can do is the reverse of linked list. This is easy to do.
 
 While the follow up says, we cannot reverse the list, so we need to figure other option. The similar function would be use a StackList.
 * TODO 143 Reorder List
+:PROPERTIES:
+:Difficulty: Medium
+:END:
 ** Problem
-Rank ~Medium~
 Given a singly linked list L: L0→L1→…→Ln-1→Ln,
 reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
 
