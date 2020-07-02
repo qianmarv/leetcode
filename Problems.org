@@ -12,13 +12,13 @@ You may assume that each input would have *exactly* one solution, and you may
 not use the same element twice.
 
 ** Example
-#+BEGIN_QUOTE
+#+BEGIN_EXAMPLE
 Given nums = [2, 7, 11, 15], target = 9,
 
 Because nums[0] + nums[1] = 2 + 7 = 9,
 
 return [0, 1].
-#+END_QUOTE
+#+END_EXAMPLE
 
 ** Solution
 *** Brute Force
@@ -73,13 +73,13 @@ You may assume the two numbers do not contain any leading zero, except the
 number 0 itself.
 
 ** Example
-#+BEGIN_QUOTE
+#+BEGIN_EXAMPLE
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 
 Output: 7 -> 0 -> 8
 
 Explanation: 342 + 465 = 807.
-#+END_QUOTE
+#+END_EXAMPLE
 
 ** Solution
 This problem is relatively simply if you are familiar with the basic data
@@ -106,13 +106,13 @@ up to the target, where index1 must be less than index2.
 
 ** Example
 
-#+BEGIN_QUOTE
+#+BEGIN_EXAMPLE
 Input: numbers = [2,7,11,15], target = 9
 
 Output: [1,2]
 
 Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
-#+END_QUOTE
+#+END_EXAMPLE
 
 ** Solution
 *** Binary Search
@@ -122,20 +122,62 @@ complexity of ~O(n)~. However, since the array is sorted, with the keyword
 be O(n*log(n)), which is worse, but there's no extra space needed.
 
 Pseudo Code:
-#+BEGIN_QUOTE
+#+BEGIN_EXAMPLE
 1. Loop the array =numbers= with index =i=:
    - let =y=target-numbers[i]=
    - Do binary search of =y= on =numbers= (low = i)
    - If found, return [i+1,j+1]
-#+END_QUOTE
+#+END_EXAMPLE
 *** Two Pointers
 Apparently, ~O(n*logn)~ seems is not a good solution. We then can think
 something of ~quick sort~, which uses two points, we can adapt the same idea
 with keeping no extra space used but lowered the time complexity to ~O(n)~.
 
 Pseudo Code:
-#+BEGIN_QUOTE
+#+BEGIN_EXAMPLE
 1. Put the =lo= pointer to 0 and =hi= pointer to =lengh-1=
 2. Set =y=target-numbers[lo]=, compare and move =hi= until =y>=numbers[hi]=
 3. If =y!=numbers[hi]=, move lo forward, and repeat step 2.
-#+END_QUOTE
+#+END_EXAMPLE
+* 445 Add Two Numbers II
+** Problem
+Rank ~Medium~
+
+You are given two non-empty linked lists representing two non-negative
+integers. The most significant digit comes first and each of their nodes contain
+a single digit. Add the two numbers and return it as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+Follow up:
+What if you cannot modify the input lists? In other words, reversing the lists is not allowed.
+
+** Example
+#+BEGIN_EXAMPLE
+Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 8 -> 0 -> 7
+#+END_EXAMPLE
+** Solution
+One option would be reverse the two linked list, then we can follow the same solution as in problem [[*Solution][002 Add Two numbers]].
+In this case, what we can do is the reverse of linked list. This is easy to do.
+
+
+While the follow up says, we cannot reverse the list, so we need to figure other option. The similar function would be use a StackList.
+* TODO 143 Reorder List
+** Problem
+Rank ~Medium~
+Given a singly linked list L: L0→L1→…→Ln-1→Ln,
+reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
+
+You may not modify the values in the list's nodes, only nodes itself may be changed.
+** Example
+#+BEGIN_EXAMPLE
+Given 1->2->3->4, reorder it to 1->4->2->3.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
+#+END_EXAMPLE
+
+
+** Solution
