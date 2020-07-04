@@ -1,5 +1,6 @@
 #+TITLE: Leetcode Problems
 #+AUTHOR: Marvin
+#+PROPERTY: LOGGING nil
 
 * 001 Two Sum :Array:HashTable:
 :PROPERTIES:
@@ -169,15 +170,21 @@ In this case, what we can do is the reverse of linked list. This is easy to do.
 
 
 While the follow up says, we cannot reverse the list, so we need to figure other option. The similar function would be use a StackList.
-* TODO 143 Reorder List
+* 143 Reorder List :LinkedList:
 :PROPERTIES:
 :Difficulty: Medium
+:END:
+:LOGBOOK:
+CLOCK: [2020-07-04 Sat 15:24]--[2020-07-04 Sat 17:46] =>  2:22
+CLOCK: [2020-07-04 Sat 10:38]--[2020-07-04 Sat 11:50] =>  1:12
 :END:
 ** Problem
 Given a singly linked list L: L0→L1→…→Ln-1→Ln,
 reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
 
-You may not modify the values in the list's nodes, only nodes itself may be changed.
+You may not modify the values in the list's nodes, only nodes itself may be
+changed.
+
 ** Example
 #+BEGIN_EXAMPLE
 Given 1->2->3->4, reorder it to 1->4->2->3.
@@ -189,3 +196,38 @@ Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
 
 
 ** Solution
+*** First Try
+We first get a reversed linked list, and then we travel the two linked list in
+the same time until the value meet (The middle value).
+The time complexity will be 2n or O(n), space complexity will be n or O(n).
+
+Question: how we know we should stop, or how shall we know it's middle value.
+Answer: It's singly linked list, so we can simple compare with the value, value
+from the natual linked list should always left than or equal than the reversed
+order one, and at one point, they will meet with the same value, then should
+stop the loop.
+
+currL -> L0;
+nextL -> L1;
+currRL > Ln;
+
+L0->Ln;
+currL -> L1;
+nextL -> Ln-1;
+currRL -> L2;
+
+Failed, reason is the assumption which the linked list is ordered is incorrect,
+in this case, we can only do the count for the reverse part. That's quite ugly.
+*** Second Try
+For linked list, we have so called "fast-slow-pointer", which means we set two
+points to do the travesal of the singly linked list, slow pointer goes
+one step in one round, while fast pointer goes two steps in one round, so when
+fast pointer reach the end, we could imagine that the slow pointer exactly
+stopped in the middle of the list.
+
+Second step is, start at the middle position (slow->next), we start to reverse
+the list, by the end of this step, we have two list, one is the natual list
+pointd by head, the other is reversed from tail pointed by tail.
+
+Last step is to compose the new list with the two lists, it's pretty easy step
+to go.
