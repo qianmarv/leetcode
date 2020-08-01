@@ -120,6 +120,22 @@ Note that the answer must be a substring, "pwke" is a subsequence and not a subs
 #+END_EXAMPLE
 
 ** Solution
+A typical two pointer or slide window problem.
+The algorithm describes in below:
+1. Define front pointer fp at position 0, define back pointer bp at position 0.
+2. Check whether next character of fp has repeat character between fp and bp.
+3. If not, move fp forward; And back to step 2
+4. If yes,
+   - compare current string length with already saved maximum string, if
+     exceeds, then save current string to maxmum string
+   - move bp to next character of the repeat character
+   - move fp to next character, and back to step 2
+
+The tricky part is how to detect whether the next character is repeat between bp
+and fp, we could build a hash map to store the characters between bp and fp with
+its position, so that the check time is constant. In this case, the space
+complexity is O(n) time complexity is n,
+
 * 143 Reorder List :LinkedList:
 :PROPERTIES:
 :Difficulty: Medium
@@ -206,7 +222,6 @@ Output: [1,2]
 
 Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 #+END_EXAMPLE
-
 ** Solution
 *** Binary Search
 We could of course still use the hasmap solution, which has both time and space
