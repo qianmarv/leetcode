@@ -93,7 +93,7 @@ structure linked list.
 Just need to visit two linked list, have them sum up, in the meantime, need to
 care about whether one of the linked list is empty, and whether the sum in each
 time is bigger than 9.
-* TODO 003 Longest Substring :String:TowPointers:
+* 003 Longest Substring :String:TowPointers:
 :PROPERTIES:
 :Difficulty: Medium
 :END:
@@ -135,6 +135,35 @@ The tricky part is how to detect whether the next character is repeat between bp
 and fp, we could build a hash map to store the characters between bp and fp with
 its position, so that the check time is constant. In this case, the space
 complexity is O(n) time complexity is n,
+* 004 :Array:BinarySearch:DivedAndConquer:
+:PROPERTIES:
+:Difficulty: Hard
+:Link:     https://leetcode.com/problems/median-of-two-sorted-arrays/
+:END:
+** Problem
+There are two sorted arrays nums1 and nums2 of size m and n respectively.
+
+Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+
+You may assume nums1 and nums2 cannot be both empty.
+** Example
+*Example 1:*
+#+BEGIN_EXAMPLE
+nums1 = [1, 3]
+nums2 = [2]
+
+The median is 2.0
+#+END_EXAMPLE
+
+*Example 2:*
+#+BEGIN_EXAMPLE
+nums1 = [1, 2]
+nums2 = [3, 4]
+
+The median is (2 + 3)/2 = 2.5
+#+END_EXAMPLE
+
+** Solution
 
 * 143 Reorder List :LinkedList:
 :PROPERTIES:
@@ -159,7 +188,6 @@ Given 1->2->3->4, reorder it to 1->4->2->3.
 #+BEGIN_EXAMPLE
 Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
 #+END_EXAMPLE
-
 
 ** Solution
 *** First Try
