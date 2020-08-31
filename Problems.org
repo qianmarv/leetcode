@@ -140,6 +140,9 @@ complexity is O(n) time complexity is n,
 :Difficulty: Hard
 :Link:     https://leetcode.com/problems/median-of-two-sorted-arrays/
 :END:
+:PROPERTIES:
+:Difficulty: Hard
+:END:
 ** Problem
 There are two sorted arrays nums1 and nums2 of size m and n respectively.
 
@@ -164,6 +167,26 @@ The median is (2 + 3)/2 = 2.5
 #+END_EXAMPLE
 
 ** Solution
+* 005 Longest Palindromic Substring
+:PROPERTIES:
+:Difficulty: Medium
+:END:
+** Problem
+Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+** Example
+#+BEGIN_EXAMPLE
+Input: "babad"
+Output: "bab"
+Note: "aba" is also a valid answer.
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+Input: "cbbd"
+Output: "bb"
+#+END_EXAMPLE
+
+** Solution
+
 * 029 Divide Two Integers :BinarySearch:
 :PROPERTIES:
 :Difficulty: Medium
