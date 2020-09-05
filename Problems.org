@@ -322,22 +322,83 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 ** Problem
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
-#+BEGIN_EXAMPLE
 Example 1:
+#+BEGIN_EXAMPLE
 Input: 121
 Output: true
+#+END_EXAMPLE
 
 Example 2:
+#+BEGIN_EXAMPLE
 Input: -121
 Output: false
 Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+#+END_EXAMPLE
 
 Example 3:
+#+BEGIN_EXAMPLE
 Input: 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 #+END_EXAMPLE
+* 010 Regular Expression Matching :String:DP:Backtracking:
+:PROPERTIES:
+:Difficulty: Hard
+:END:
+** Problem
+Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
 
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+The matching should cover the entire input string (not partial).
+
+Note:
+
+s could be empty and contains only lowercase letters a-z.
+p could be empty and contains only lowercase letters a-z, and characters like . or *.
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+s = "aa"
+p = "a"
+Output: false
+Explanation: "a" does not match the entire string "aa".
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input:
+s = "aa"
+p = "a*"
+Output: true
+Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input:
+s = "ab"
+p = ".*"
+Output: true
+Explanation: ".*" means "zero or more (*) of any character (.)".
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input:
+s = "aab"
+p = "c*a*b"
+Output: true
+Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches "aab".
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input:
+s = "mississippi"
+p = "mis*is*p*."
+Output: false
+#+END_EXAMPLE
 
 
 * 029 Divide Two Integers :BinarySearch:
