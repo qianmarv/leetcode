@@ -448,7 +448,7 @@ Output: 4
 Explanation: The longest valid parentheses substring is "()()"
 #+END_EXAMPLE
 
-* TODO 070 Climbing Stairs :DP:
+* 070 Climbing Stairs :DP:
 :PROPERTIES:
 :Difficulty: Easy
 :Link:     [[https://leetcode.com/problems/climbing-stairs/description/][leetcode]]
@@ -592,6 +592,39 @@ Pseudo Code:
 2. Set =y=target-numbers[lo]=, compare and move =hi= until =y>=numbers[hi]=
 3. If =y!=numbers[hi]=, move lo forward, and repeat step 2.
 #+END_EXAMPLE
+* 198 House Robber :DP:
+:PROPERTIES:
+:Difficulty: Easy
+:END:
+** Problem
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
+
+
+
+*Example 1:*
+#+BEGIN_EXAMPLE
+Input: nums = [1,2,3,1]
+Output: 4
+Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+             Total amount you can rob = 1 + 3 = 4.
+#+END_EXAMPLE
+
+*Example 2:*
+#+BEGIN_EXAMPLE
+Input: nums = [2,7,9,3,1]
+Output: 12
+Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
+             Total amount you can rob = 2 + 9 + 1 = 12.
+
+#+END_EXAMPLE
+
+*Constraints:*
+
+0 <= nums.length <= 100
+0 <= nums[i] <= 400
+** Solution
 * 445 Add Two Numbers II :LinkedList:
 :PROPERTIES:
 :Difficulty: Medium
