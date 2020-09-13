@@ -426,6 +426,28 @@ Explanation: 7/-3 = truncate(-2.33333..) = -2.
 
 
 ** Solution
+* 032 Longest Valid Parentheses :String:DP:
+:PROPERTIES:
+:Difficulty: Hard
+:Link:    [[https://leetcode.com/problems/longest-valid-parentheses/][leetcode]]
+:END:
+** Problem
+Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "(()"
+Output: 2
+Explanation: The longest valid parentheses substring is "()"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: ")()())"
+Output: 4
+Explanation: The longest valid parentheses substring is "()()"
+#+END_EXAMPLE
+
 
 * 143 Reorder List :LinkedList:
 :PROPERTIES:
