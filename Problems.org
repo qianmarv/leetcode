@@ -14,7 +14,7 @@ add up to a specific target.
 You may assume that each input would have *exactly* one solution, and you may
 not use the same element twice.
 
-** Example
+*Example*
 #+BEGIN_EXAMPLE
 Given nums = [2, 7, 11, 15], target = 9,
 
@@ -77,7 +77,7 @@ digit. Add the two numbers and return it as a linked list.
 You may assume the two numbers do not contain any leading zero, except the
 number 0 itself.
 
-** Example
+*Example*
 #+BEGIN_EXAMPLE
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 
@@ -99,19 +99,21 @@ time is bigger than 9.
 :END:
 ** Problem
 Given a string, find the length of the longest substring without repeating characters.
-** Example
+*Example 1*
 #+BEGIN_EXAMPLE
 Input: "abcabcbb"
 Output: 3
 Explanation: The answer is "abc", with the length of 3.
 #+END_EXAMPLE
 
+*Example 2*
 #+BEGIN_EXAMPLE
 Input: "bbbbb"
 Output: 1
 Explanation: The answer is "b", with the length of 1.
 #+END_EXAMPLE
 
+*Example 3*
 #+BEGIN_EXAMPLE
 Input: "pwwkew"
 Output: 3
@@ -140,16 +142,13 @@ complexity is O(n) time complexity is n,
 :Difficulty: Hard
 :Link:     https://leetcode.com/problems/median-of-two-sorted-arrays/
 :END:
-:PROPERTIES:
-:Difficulty: Hard
-:END:
 ** Problem
 There are two sorted arrays nums1 and nums2 of size m and n respectively.
 
 Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 
 You may assume nums1 and nums2 cannot be both empty.
-** Example
+
 *Example 1:*
 #+BEGIN_EXAMPLE
 nums1 = [1, 3]
@@ -190,13 +189,14 @@ Exception Case:
 :END:
 ** Problem
 Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
-** Example
+*Example 1*
 #+BEGIN_EXAMPLE
 Input: "babad"
 Output: "bab"
 Note: "aba" is also a valid answer.
 #+END_EXAMPLE
 
+*Example 2*
 #+BEGIN_EXAMPLE
 Input: "cbbd"
 Output: "bb"
@@ -218,12 +218,13 @@ And then read line by line: "PAHNAPLSIIGYIR"
 Write the code that will take a string and make this conversion given a number of rows:
 
 string convert(string s, int numRows);
-** Example
+*Example 1*
 #+BEGIN_EXAMPLE
 Input: s = "PAYPALISHIRING", numRows = 3
 Output: "PAHNAPLSIIGYIR"
 #+END_EXAMPLE
 
+*Example 2*
 #+BEGIN_EXAMPLE
 Input: s = "PAYPALISHIRING", numRows = 4
 Output: "PINALSIGYAHRPI"
@@ -243,14 +244,15 @@ P     I
 :END:
 ** Problem
 Given a 32-bit signed integer, reverse digits of an integer.
-** Example
-Example 1:
+
+*Example 1*
 #+BEGIN_EXAMPLE
 Input: 123
 Output: 321
 Example 2:
 #+END_EXAMPLE
 
+*Example 2*
 #+BEGIN_EXAMPLE
 Input: 120
 Output: 21
@@ -314,6 +316,7 @@ Output: -2147483648
 Explanation: The number "-91283472332" is out of the range of a 32-bit signed integer.
              Thefore INT_MIN (−231) is returned.
 #+END_EXAMPLE
+** Solution
 
 * 009 Palindrome Number :Math:
 :PROPERTIES:
@@ -322,25 +325,26 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 ** Problem
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
-Example 1:
+*Example 1:*
 #+BEGIN_EXAMPLE
 Input: 121
 Output: true
 #+END_EXAMPLE
 
-Example 2:
+*Example 2:*
 #+BEGIN_EXAMPLE
 Input: -121
 Output: false
 Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 #+END_EXAMPLE
 
-Example 3:
+*Example 3:*
 #+BEGIN_EXAMPLE
 Input: 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 #+END_EXAMPLE
+** Solution
 * 010 Regular Expression Matching :String:DP:Backtracking:
 :PROPERTIES:
 :Difficulty: Hard
@@ -400,6 +404,7 @@ p = "mis*is*p*."
 Output: false
 #+END_EXAMPLE
 
+** Solution
 
 * 029 Divide Two Integers :BinarySearch:
 :PROPERTIES:
@@ -411,19 +416,19 @@ Given two integers dividend and divisor, divide two integers without using multi
 Return the quotient after dividing dividend by divisor.
 
 The integer division should truncate toward zero, which means losing its fractional part. For example, truncate(8.345) = 8 and truncate(-2.7335) = -2.
-** Example
+*Example 1*
 #+BEGIN_EXAMPLE
 Input: dividend = 10, divisor = 3
 Output: 3
 Explanation: 10/3 = truncate(3.33333..) = 3.
 #+END_EXAMPLE
 
+*Example 2*
 #+BEGIN_EXAMPLE
 Input: dividend = 7, divisor = -3
 Output: -2
 Explanation: 7/-3 = truncate(-2.33333..) = -2.
 #+END_EXAMPLE
-
 
 ** Solution
 * TODO 032 Longest Valid Parentheses :String:DP:
@@ -558,8 +563,7 @@ up to the target, where index1 must be less than index2.
 - You may assume that each input would have exactly one solution and you may not
   use the same element twice.
 
-** Example
-
+*Example 1*
 #+BEGIN_EXAMPLE
 Input: numbers = [2,7,11,15], target = 9
 
@@ -595,6 +599,7 @@ Pseudo Code:
 * 198 House Robber :DP:
 :PROPERTIES:
 :Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/house-robber/submissions/][leetcode]]
 :END:
 ** Problem
 You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
@@ -639,7 +644,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 Follow up:
 What if you cannot modify the input lists? In other words, reversing the lists is not allowed.
 
-** Example
+*Example 1*
 #+BEGIN_EXAMPLE
 Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 8 -> 0 -> 7
