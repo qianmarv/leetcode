@@ -663,6 +663,8 @@ Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
 #+END_EXAMPLE
 
 ** Solution
+Similar to Problem 198 House Robber, need additional consideration if the first
+house is robbed or not.
 * 445 Add Two Numbers II :LinkedList:
 :PROPERTIES:
 :Difficulty: Medium
