@@ -495,8 +495,6 @@ Input: m = 3, n = 3
 Output: 6
 #+END_EXAMPLE
 
-
-
 * 064 Minimum Path Sum :DP:
 :PROPERTIES:
 :Difficulty: Medium
@@ -518,7 +516,6 @@ Input:
 Output: 7
 Explanation: Because the path 1→3→1→1→1 minimizes the sum.
 #+END_EXAMPLE
-
 
 * 070 Climbing Stairs :DP:
 :PROPERTIES:
@@ -732,6 +729,62 @@ Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
 ** Solution
 Similar to Problem 198 House Robber, need additional consideration if the first
 house is robbed or not.
+* 303 Range Sum Query - Immutable :DP:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/range-sum-query-immutable/description/][leetcode]]
+:END:
+** Problem
+Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
+
+Example:
+#+BEGIN_EXAMPLE
+Given nums = [-2, 0, 3, -5, 2, -1]
+
+sumRange(0, 2) -> 1
+sumRange(2, 5) -> -1
+sumRange(0, 5) -> -3
+#+END_EXAMPLE
+
+*Constraints:*
+- You may assume that the array does not change.
+- There are many calls to sumRange function.
+- 0 <= nums.length <= 10^4
+- -10^5 <= nums[i] <= 10^5
+- 0 <= i <= j < nums.length
+* 413 Arithmetic Slices :DP:Math:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/arithmetic-slices/description/][leetcode]]
+:END:
+** Problem
+A sequence of numbers is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.
+
+For example, these are arithmetic sequences:
+
+1, 3, 5, 7, 9
+7, 7, 7, 7
+3, -1, -5, -9
+The following sequence is not arithmetic.
+
+1, 1, 2, 5, 7
+
+A zero-indexed array A consisting of N numbers is given. A slice of that array is any pair of integers (P, Q) such that 0 <= P < Q < N.
+
+A slice (P, Q) of the array A is called arithmetic if the sequence:
+A[P], A[P + 1], ..., A[Q - 1], A[Q] is arithmetic. In particular, this means that P + 1 < Q.
+
+The function should return the number of arithmetic slices in the array A.
+
+
+*Example:*
+#+BEGIN_EXAMPLE
+A = [1, 2, 3, 4]
+
+return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
+#+END_EXAMPLE
+
+
 * 445 Add Two Numbers II :LinkedList:
 :PROPERTIES:
 :Difficulty: Medium
