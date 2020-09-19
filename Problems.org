@@ -729,6 +729,28 @@ Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
 ** Solution
 Similar to Problem 198 House Robber, need additional consideration if the first
 house is robbed or not.
+* 279 Perfect Squares :Math:DP:BFS:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/perfect-squares/description/][leetcode]]
+:END:
+** Problem
+Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 12
+Output: 3
+Explanation: 12 = 4 + 4 + 4.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 13
+Output: 2
+Explanation: 13 = 4 + 9.
+#+END_EXAMPLE
+
 * 303 Range Sum Query - Immutable :DP:
 :PROPERTIES:
 :Difficulty: Easy
@@ -752,6 +774,29 @@ sumRange(0, 5) -> -3
 - 0 <= nums.length <= 10^4
 - -10^5 <= nums[i] <= 10^5
 - 0 <= i <= j < nums.length
+* 343 Integer Break :DP:Math:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/integer-break/description/][leetcode]]
+:END:
+** Problem
+Given a positive integer n, break it into the sum of at least two positive integers and maximize the product of  those integers. Return the maximum product you can get.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 2
+Output: 1
+Explanation: 2 = 1 + 1, 1 × 1 = 1.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 10
+Output: 36
+Explanation: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36.
+Note: You may assume that n is not less than 2 and not larger than 58.
+#+END_EXAMPLE
+
 * 413 Arithmetic Slices :DP:Math:
 :PROPERTIES:
 :Difficulty: Medium
@@ -783,7 +828,6 @@ A = [1, 2, 3, 4]
 
 return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
 #+END_EXAMPLE
-
 
 * 445 Add Two Numbers II :LinkedList:
 :PROPERTIES:
