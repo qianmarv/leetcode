@@ -711,6 +711,34 @@ Explanation: There are three ways to climb to the top.
 1 <= n <= 45
 ** Solution
 Source code in [[file:070_Climbing_Stairs/Java/Solution.java::class Solution{][Java]].
+* 088 Merge Sorted Array :TwoPointers:Array:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/merge-sorted-array/][leetcode]]
+:END:
+** Problem
+Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
+
+*Note:*
+- The number of elements initialized in nums1 and nums2 are m and n respectively.
+- You may assume that nums1 has enough space (size that is equal to m + n) to hold additional elements from nums2.
+
+*Example:*
+#+BEGIN_EXAMPLE
+Input:
+nums1 = [1,2,3,0,0,0], m = 3
+nums2 = [2,5,6],       n = 3
+
+Output: [1,2,2,3,5,6]
+#+END_EXAMPLE
+
+Constraints:
+#+BEGIN_QUOTE
+-10^9 <= nums1[i], nums2[i] <= 10^9
+nums1.length == m + n
+nums2.length == n
+#+END_QUOTE
+
 * 091 Decode Ways :String:DP:
 :PROPERTIES:
 :Difficulty: Medium
