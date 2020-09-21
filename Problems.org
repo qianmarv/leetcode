@@ -986,6 +986,28 @@ Output: 36
 Explanation: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36.
 Note: You may assume that n is not less than 2 and not larger than 58.
 #+END_EXAMPLE
+* 345 Reverse Vowels of a String :TwoPointers:String:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/reverse-vowels-of-a-string/description/][leetcode]]
+:END:
+** Problem
+Write a function that takes a string as input and reverse only the vowels of a string.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "hello"
+Output: "holle"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "leetcode"
+Output: "leotcede"
+#+END_EXAMPLE
+
+*Note:*
+The vowels does not include the letter "y".
 
 * 413 Arithmetic Slices :DP:Math:
 :PROPERTIES:
@@ -1044,17 +1066,17 @@ In this case, what we can do is the reverse of linked list. This is easy to do.
 
 
 While the follow up says, we cannot reverse the list, so we need to figure other option. The similar function would be use a StackList.
-* 663 Sum of Square numbers :TwoPointers:Array:BinarySearch:
+* 663 Sum of Square numbers :Math:
 :PROPERTIES:
 :Difficulty: Easy
-:Link:     [[https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/][leetcode]]
+:Link:     [[https://leetcode.com/problems/sum-of-square-numbers/description/][leetcode]]
 :END:
 ** Problem
 Given a non-negative integer c, your task is to decide whether there're two integers a and b such that a2 + b2 = c.
 
 Example 1:
 #+BEGIN_EXAMPLE
-Input: 5
+Input: 50
 Output: True
 Explanation: 1 * 1 + 2 * 2 = 5
 #+END_EXAMPLE
