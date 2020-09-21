@@ -1086,3 +1086,26 @@ Example 2:
 Input: 3
 Output: False
 #+END_EXAMPLE
+* 680 Valid Palindrome II :String:TwoPointers:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/valid-palindrome-ii/submissions/][leetcode]]
+:END:
+** Problem
+Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: "aba"
+Output: True
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: "abca"
+Output: True
+Explanation: You could delete the character 'c'.
+#+END_EXAMPLE
+
+*Note:*
+The string will only contain lowercase characters a-z. The maximum length of the string is 50000.
