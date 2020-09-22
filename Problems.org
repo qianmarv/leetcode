@@ -768,6 +768,51 @@ Input: "226"
 Output: 3
 Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 #+END_EXAMPLE
+* 141 Linked List Cycle :TwoPointers:LinkedList:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/linked-list-cycle/][leetcode]]
+:END:
+** Problem
+Given head, the head of a linked list, determine if the linked list has a cycle in it.
+
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter.
+
+Return true if there is a cycle in the linked list. Otherwise, return false.
+
+Follow up:
+
+Can you solve it using O(1) (i.e. constant) memory?
+
+Example 1:
+
+[[download:141_Linked_List_Cycle/_20200922_083807circularlinkedlist.png]]
+
+#+BEGIN_EXAMPLE
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+#+END_EXAMPLE
+
+Example 2:
+
+[[download:141_Linked_List_Cycle/_20200922_083938circularlinkedlist_test2.png]]
+
+#+BEGIN_EXAMPLE
+Input: head = [1,2], pos = 0
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
+#+END_EXAMPLE
+
+Example 3:
+
+[[download:141_Linked_List_Cycle/_20200922_083918circularlinkedlist_test3.png]]
+
+#+BEGIN_EXAMPLE
+Input: head = [1], pos = -1
+Output: false
+Explanation: There is no cycle in the linked list.
+#+END_EXAMPLE
 
 * 143 Reorder List :LinkedList:
 :PROPERTIES:
