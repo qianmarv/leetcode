@@ -1139,6 +1139,37 @@ In this case, what we can do is the reverse of linked list. This is easy to do.
 
 
 While the follow up says, we cannot reverse the list, so we need to figure other option. The similar function would be use a StackList.
+* 542 Longest Word in Dictionary Through Deleting :TwoPointers:Sort:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/][leetcode]]
+:END:
+** Problem
+Given a string and a string dictionary, find the longest string in the dictionary that can be formed by deleting some characters of the given string. If there are more than one possible results, return the longest word with the smallest lexicographical order. If there is no possible result, return the empty string.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+s = "abpcplea", d = ["ale","apple","monkey","plea"]
+
+Output:
+"apple"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input:
+s = "abpcplea", d = ["a","b","c"]
+
+Output:
+"a"
+#+END_EXAMPLE
+
+*Note:*
+
+All the strings in the input will only contain lower-case letters.
+The size of the dictionary won't exceed 1,000.
+The length of all the strings in the input won't exceed 1,000.
 * 663 Sum of Square numbers :Math:
 :PROPERTIES:
 :Difficulty: Easy
