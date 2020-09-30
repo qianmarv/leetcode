@@ -1161,7 +1161,6 @@ A = [1, 2, 3, 4]
 
 return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
 #+END_EXAMPLE
-
 * 445 Add Two Numbers II :LinkedList:
 :PROPERTIES:
 :Difficulty: Medium
@@ -1187,6 +1186,53 @@ In this case, what we can do is the reverse of linked list. This is easy to do.
 
 
 While the follow up says, we cannot reverse the list, so we need to figure other option. The similar function would be use a StackList.
+* 451 Sort Characters By Frequency :HashTable:Heap:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/sort-characters-by-frequency/description/][leetcode]]
+:END:
+** Problem
+Given a string, sort it in decreasing order based on the frequency of characters.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input:
+"tree"
+
+Output:
+"eert"
+
+Explanation:
+'e' appears twice while 'r' and 't' both appear once.
+So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input:
+"cccaaa"
+
+Output:
+"cccaaa"
+
+Explanation:
+Both 'c' and 'a' appear three times, so "aaaccc" is also a valid answer.
+Note that "cacaca" is incorrect, as the same characters must be together.
+Example 3:
+
+Input:
+"Aabb"
+
+Output:
+"bbAa"
+
+Explanation:
+"bbaA" is also a valid answer, but "Aabb" is incorrect.
+Note that 'A' and 'a' are treated as two different characters.
+#+END_EXAMPLE
+
+
+
 * 542 Longest Word in Dictionary Through Deleting :TwoPointers:Sort:
 :PROPERTIES:
 :Difficulty: Medium
