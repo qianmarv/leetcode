@@ -711,6 +711,53 @@ Explanation: There are three ways to climb to the top.
 1 <= n <= 45
 ** Solution
 Source code in [[file:070_Climbing_Stairs/Java/Solution.java::class Solution{][Java]].
+* 075 Sort Colors :Array:TwoPointers:Sort:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/sort-colors/description/][leetcode]]
+:END:
+** Problem
+Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+
+Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
+
+Follow up:
+
+Could you solve this problem without using the library's sort function?
+Could you come up with a one-pass algorithm using only O(1) constant space?
+
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: nums = [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: nums = [2,0,1]
+Output: [0,1,2]
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: nums = [0]
+Output: [0]
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: nums = [1]
+Output: [1]
+#+END_EXAMPLE
+
+*Constraints:*
+#+BEGIN_QUOTE
+n == nums.length
+1 <= n <= 300
+nums[i] is 0, 1, or 2.
+#+END_QUOTE
+
 * 088 Merge Sorted Array :TwoPointers:Array:
 :PROPERTIES:
 :Difficulty: Easy
@@ -1231,6 +1278,40 @@ Explanation:
 Note that 'A' and 'a' are treated as two different characters.
 #+END_EXAMPLE
 
+
+* 455 Assign Cookies
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/assign-cookies/][leetcode]]
+:END:
+** Problem
+Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.
+
+Note:
+You may assume the greed factor is always positive.
+You cannot assign more than one cookie to one child.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [1,2,3], [1,1]
+
+Output: 1
+
+Explanation: You have 3 children and 2 cookies. The greed factors of 3 children are 1, 2, 3.
+And even though you have 2 cookies, since their size is both 1, you could only make the child whose greed factor is 1 content.
+You need to output 1.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [1,2], [1,2,3]
+
+Output: 2
+
+Explanation: You have 2 children and 3 cookies. The greed factors of 2 children are 1, 2.
+You have 3 cookies and their sizes are big enough to gratify all of the children,
+You need to output 2.
+#+END_EXAMPLE
 
 
 * 542 Longest Word in Dictionary Through Deleting :TwoPointers:Sort:
