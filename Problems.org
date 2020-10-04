@@ -1263,7 +1263,7 @@ Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 8 -> 0 -> 7
 #+END_EXAMPLE
 ** Solution
-One option would be reverse the two linked list, then we can follow the same solution as in problem [[*Solution][002 Add Two numbers]].
+One option would be reverse the two linked list, then we can follow the same solution as in problem Di[[*Solution][002 Add Two numbers]].
 In this case, what we can do is the reverse of linked list. This is easy to do.
 
 
@@ -1312,6 +1312,55 @@ Explanation:
 "bbaA" is also a valid answer, but "Aabb" is incorrect.
 Note that 'A' and 'a' are treated as two different characters.
 #+END_EXAMPLE
+* 452 Minimum Number of Arrows to Burst Balloons
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/][leetcode]]
+:END:
+** Problem
+There are some spherical balloons spread in two-dimensional space. For each balloon, provided input is the start and end coordinates of the horizontal diameter. Since it's horizontal, y-coordinates don't matter, and hence the x-coordinates of start and end of the diameter suffice. The start is always smaller than the end.
+
+An arrow can be shot up exactly vertically from different points along the x-axis. A balloon with xstart and xend bursts by an arrow shot at x if xstart ≤ x ≤ xend. There is no limit to the number of arrows that can be shot. An arrow once shot keeps traveling up infinitely.
+
+Given an array points where points[i] = [xstart, xend], return the minimum number of arrows that must be shot to burst all balloons.
+
+
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: points = [[10,16],[2,8],[1,6],[7,12]]
+Output: 2
+Explanation: One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8] and [1,6]) and another arrow at x = 11 (bursting the other two balloons).
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: points = [[1,2],[3,4],[5,6],[7,8]]
+Output: 4
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: points = [[1,2],[2,3],[3,4],[4,5]]
+Output: 2
+#+END_EXAMPLE
+
+Example 4:
+#+BEGIN_EXAMPLE
+Input: points = [[1,2]]
+Output: 1
+#+END_EXAMPLE
+
+Example 5:
+#+BEGIN_EXAMPLE
+Input: points = [[2,3],[2,3]]
+Output: 1
+#+END_EXAMPLE
+
+*Constraints:*
+- 0 <= points.length <= 10^4
+- points.length == 2
+- -2^31 <= x_start < x_end <= 2^31 - 1
 
 * 455 Assign Cookies
 :PROPERTIES:
