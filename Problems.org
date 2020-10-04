@@ -1349,9 +1349,8 @@ Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 8 -> 0 -> 7
 #+END_EXAMPLE
 ** Solution
-One option would be reverse the two linked list, then we can follow the same solution as in problem Di[[*Solution][002 Add Two numbers]].
+One option would be reverse the two linked list, then we can follow the same solution as in problem 002 Add Two numbers.
 In this case, what we can do is the reverse of linked list. This is easy to do.
-
 
 While the follow up says, we cannot reverse the list, so we need to figure other option. The similar function would be use a StackList.
 * 451 Sort Characters By Frequency :HashTable:Heap:
@@ -1448,7 +1447,7 @@ Output: 1
 - points.length == 2
 - -2^31 <= x_start < x_end <= 2^31 - 1
 
-* 455 Assign Cookies
+* 455 Assign Cookies :Greedy:
 :PROPERTIES:
 :Difficulty: Easy
 :Link:     [[https://leetcode.com/problems/assign-cookies/][leetcode]]
@@ -1513,6 +1512,33 @@ Output:
 All the strings in the input will only contain lower-case letters.
 The size of the dictionary won't exceed 1,000.
 The length of all the strings in the input won't exceed 1,000.
+* 605 Can Place Flowers :Array:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/can-place-flowers/description/][leetcode]]
+:END:
+** Problem
+Suppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would die.
+
+Given a flowerbed (represented as an array containing 0 and 1, where 0 means empty and 1 means not empty), and a number n, return if n new flowers can be planted in it without violating the no-adjacent-flowers rule.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: flowerbed = [1,0,0,0,1], n = 1
+Output: True
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: flowerbed = [1,0,0,0,1], n = 2
+Output: False
+#+END_EXAMPLE
+
+*Note:*
+The input array won't violate no-adjacent-flowers rule.
+The input array size is in the range of [1, 20000].
+n is a non-negative integer which won't exceed the input array size.
+
 * 663 Sum of Square numbers :Math:
 :PROPERTIES:
 :Difficulty: Easy
