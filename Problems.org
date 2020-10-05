@@ -1056,6 +1056,32 @@ pointd by head, the other is reversed from tail pointed by tail.
 
 Last step is to compose the new list with the two lists, it's pretty easy step
 to go.
+* 153 Find Minimum in Rotated Sorted Array :BinarySearch:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/][leetcode]]
+:END:
+** Problem
+Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
+
+(i.e.,  [0,1,2,4,5,6,7] might become  [4,5,6,7,0,1,2]).
+
+Find the minimum element.
+
+You may assume no duplicate exists in the array.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [3,4,5,1,2]
+Output: 1
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: [4,5,6,7,0,1,2]
+Output: 0
+#+END_EXAMPLE
+
 * 167 Two Sum II :Array:TwoPointers:
 :PROPERTIES:
 :Difficulty: Easy
