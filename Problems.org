@@ -1971,8 +1971,8 @@ Example 1:
 
 Input: [[0,1],[1,0]]
 
-
 Output: 2
+
 #+END_EXAMPLE
 
 

@@ -1,12 +1,10 @@
-import java.util.Arrays;
+import java.util.*;
 class Solution{
-    //Runtime: 49 ms, faster than 48.56%
-    //Memory Usage: 38.9 MB, less than 64.50%
-    //Runtime: 34 ms, faster than 62.72%
-    //Memory Usage: 38.8 MB, less than 71.88%
+
+    //DP Solution
     //Runtime: 32 ms, faster than 75.41%
     //Memory Usage: 38.7 MB, less than 76.23%
-    public int numSquares(int n){
+    public int numSquaresDP(int n){
         var dp = new int[n+1];
         dp[1] = 1;
         //TODO need initialize dp[n] to zero?
@@ -24,9 +22,41 @@ class Solution{
         }
         return dp[n];
     }
+    //BFS Solution
+    //Runtime: 173 ms, faster than 17.96% o
+    //Memory Usage: 261.8 MB, less than 5.01%
+    public int numSquaresBFS(int n){
+        int depth = 0;
+        List<Integer> sqrs = generateSquares(n);
+
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(n);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            depth++;
+            while(size-- > 0){
+                int curr = queue.poll();
+                for(int sqr: sqrs){
+                    int rest = curr - sqr;
+                    if(rest == 0) return depth;
+                    else if(rest > 0) queue.add(rest);
+                }
+            }
+        }
+        return -1;
+    }
+    private List<Integer> generateSquares(int n){
+        List<Integer> result = new ArrayList<>();
+        for(int i = 1; true; i++){
+            int sqr = i * i;
+            if(sqr > n) break;
+            result.add(sqr);
+        }
+        return result;
+    }
     public static void main(String[] args){
         Solution so = new Solution();
         int n = Integer.parseInt(args[0]);
-        System.out.printf("Given N=%d, Least number of PS=%d.", n, so.numSquares(n));
+        System.out.printf("Given N=%d, Least number of PS=%d.\n", n, so.numSquaresBFS(n));
     }
 }
