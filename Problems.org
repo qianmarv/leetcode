@@ -1058,7 +1058,6 @@ Explanation: The endWord "cog" is not in wordList, therefore no possible transfo
 
 #+END_EXAMPLE
 
-
 * 141 Linked List Cycle :TwoPointers:LinkedList:
 :PROPERTIES:
 :Difficulty: Easy
@@ -1274,6 +1273,36 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 0 <= nums.length <= 100
 0 <= nums[i] <= 400
 ** Solution
+* 200 Number of Islands :DFS:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/number-of-islands/description/][leetcode]]
+:END:
+** Problem
+Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: grid = [
+  ["1","1","1","1","0"],
+  ["1","1","0","1","0"],
+  ["1","1","0","0","0"],
+  ["0","0","0","0","0"]
+]
+Output: 1
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: grid = [
+  ["1","1","0","0","0"],
+  ["1","1","0","0","0"],
+  ["0","0","1","0","0"],
+  ["0","0","0","1","1"]
+]
+Output: 3
+#+END_EXAMPLE
+
 * 213 House Robber II :DP:
 :PROPERTIES:
 :Difficulty: Medium
