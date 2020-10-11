@@ -895,7 +895,35 @@ n == nums.length
 1 <= n <= 300
 nums[i] is 0, 1, or 2.
 #+END_QUOTE
+* 079 Word Search :Backtracking:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/word-search/description/][leetcode]]
+:END:
+** Problem
+Given a 2D board and a word, find if the word exists in the grid.
 
+The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+
+Example:
+#+BEGIN_EXAMPLE
+board =
+[
+  ['A','B','C','E'],
+  ['S','F','C','S'],
+  ['A','D','E','E']
+]
+
+Given word = "ABCCED", return true.
+Given word = "SEE", return true.
+Given word = "ABCB", return false.
+#+END_EXAMPLE
+
+Constraints:
+- board and word consists only of lowercase and uppercase English letters.
+- 1 <= board.length <= 200
+- 1 <= board[i].length <= 200
+- 1 <= word.length <= 10^3
 * 088 Merge Sorted Array :TwoPointers:Array:
 :PROPERTIES:
 :Difficulty: Easy
@@ -953,7 +981,7 @@ Input: "226"
 Output: 3
 Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 #+END_EXAMPLE
-* 093 Restore IP Addresses
+* 093 Restore IP Addresses :Backtracking:
 :PROPERTIES:
 :Difficulty: Medium
 :Link:     [[https://leetcode.com/problems/restore-ip-addresses/description/][leetcode]]
