@@ -1141,6 +1141,29 @@ Constraints:
 nums1.length == m + n
 nums2.length == n
 #+END_QUOTE
+* 090 Subsets II :Backtracking:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/subsets-ii/description/][leetcode]]
+:END:
+** Problem
+Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
+
+Note: The solution set must not contain duplicate subsets.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: [1,2,2]
+Output:
+[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
+#+END_EXAMPLE
 
 * 091 Decode Ways :String:DP:
 :PROPERTIES:
