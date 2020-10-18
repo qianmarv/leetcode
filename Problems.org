@@ -1952,6 +1952,24 @@ Input: n = 13
 Output: 2
 Explanation: 13 = 4 + 9.
 #+END_EXAMPLE
+* 300 Longest Increasing Subsequence :BinarySearch:DP:
+:PROPERTIES:
+:Link:     [[https://leetcode.com/problems/longest-increasing-subsequence/description/][leetcode]]
+:Difficulty: Medium
+:END:
+** Problem
+Given an unsorted array of integers, find the length of longest increasing subsequence.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: [10,9,2,5,3,7,101,18]
+Output: 4
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+#+END_EXAMPLE
+
+*Note:*
+- There may be more than one LIS combination, it is only necessary for you to return the length. Your algorithm should run in O(n2) complexity.
+- Follow up: Could you improve it to O(n log n) time complexity?
 
 * 303 Range Sum Query - Immutable :DP:
 :PROPERTIES:
@@ -2471,6 +2489,27 @@ Output: False
 The input array won't violate no-adjacent-flowers rule.
 The input array size is in the range of [1, 20000].
 n is a non-negative integer which won't exceed the input array size.
+* 646 Maximum Length of Pair Chain :DP:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/maximum-length-of-pair-chain/description/][leetcode]]
+:END:
+** Problem
+You are given n pairs of numbers. In every pair, the first number is always smaller than the second number.
+
+Now, we define a pair (c, d) can follow another pair (a, b) if and only if b < c. Chain of pairs can be formed in this fashion.
+
+Given a set of pairs, find the length longest chain which can be formed. You needn't use up all the given pairs. You can select pairs in any order.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [[1,2], [2,3], [3,4]]
+Output: 2
+Explanation: The longest chain is [1,2] -> [3,4]
+#+END_EXAMPLE
+
+*Note:*
+- The number of given pairs will be in the range [1, 1000].
 
 * 663 Sum of Square numbers :Math:
 :PROPERTIES:
