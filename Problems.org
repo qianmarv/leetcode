@@ -1741,6 +1741,38 @@ Example 3:
 Input: 701
 Output: "ZY"
 #+END_EXAMPLE
+* 172 Factorial Trailing Zeroes :Math:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/factorial-trailing-zeroes/description/][leetcode]]
+:END:
+** Problem
+Given an integer n, return the number of trailing zeroes in n!.
+
+Follow up: Could you write a solution that works in logarithmic time complexity?
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 3
+Output: 0
+Explanation: 3! = 6, no trailing zero.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 5
+Output: 1
+Explanation: 5! = 120, one trailing zero.
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 0
+Output: 0
+#+END_EXAMPLE
+
+Constraints:
+- 1 <= n <= 104
 
 * 198 House Robber :DP:
 :PROPERTIES:
