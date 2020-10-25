@@ -1706,6 +1706,42 @@ Pseudo Code:
 2. Set =y=target-numbers[lo]=, compare and move =hi= until =y>=numbers[hi]=
 3. If =y!=numbers[hi]=, move lo forward, and repeat step 2.
 #+END_EXAMPLE
+* 168 Excel Sheet Column Title :Math:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/excel-sheet-column-title/][leetcode]]
+:END:
+** Problem
+Given a positive integer, return its corresponding column title as appear in an Excel sheet.
+
+For example:
+
+    1 -> A
+    2 -> B
+    3 -> C
+    ...
+    26 -> Z
+    27 -> AA
+    28 -> AB
+    ...
+Example 1:
+#+BEGIN_EXAMPLE
+Input: 1
+Output: "A"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: 28
+Output: "AB"
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: 701
+Output: "ZY"
+#+END_EXAMPLE
+
 * 198 House Robber :DP:
 :PROPERTIES:
 :Difficulty: Easy
