@@ -1769,7 +1769,35 @@ Input: grid = [
 ]
 Output: 3
 #+END_EXAMPLE
+* 204 Count Primes :Math:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/count-primes/description/][leetcode]]
+:END:
+** Problem
+Count the number of prime numbers less than a non-negative number, n.
 
+Example 1:
+#+BEGIN_EXAMPLE
+Input: n = 10
+Output: 4
+Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: n = 0
+Output: 0
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: n = 1
+Output: 0
+#+END_EXAMPLE
+
+*Constraints:*
+- 0 <= n <= 5 * 10^6
 * 213 House Robber II :DP:
 :PROPERTIES:
 :Difficulty: Medium
