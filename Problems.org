@@ -1339,7 +1339,62 @@ The above output corresponds to the 5 unique BST's shown below:
     /     /       \                 \
    2     1         2                 3
 #+END_QUOTE
+* 104 Maximum Depth of Binary Tree :Tree:DFS:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/maximum-depth-of-binary-tree/][leetcode]]
+:END:
+** Problem
+Given a binary tree, find its maximum depth.
 
+The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+Note: A leaf is a node with no children.
+
+Example:
+#+BEGIN_EXAMPLE
+Given binary tree [3,9,20,null,null,15,7],
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its depth = 3.
+#+END_EXAMPLE
+* 110 Balanced Binary Tree :Tree:DFS:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/balanced-binary-tree/][leetcode]]
+:END:
+** Problem
+Given a binary tree, determine if it is height-balanced.
+
+For this problem, a height-balanced binary tree is defined as:
+
+a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: root = [3,9,20,null,null,15,7]
+Output: true
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: root = [1,2,2,3,3,null,null,4,4]
+Output: false
+#+END_EXAMPLE
+
+Example 3:
+#+BEGIN_EXAMPLE
+Input: root = []
+Output: true
+#+END_EXAMPLE
+
+Constraints:
+- The number of nodes in the tree is in the range [0, 5000].
+- -10^4 <= Node.val <= 10^4
 * 121 Best Time to Buy and Sell Stock
 :PROPERTIES:
 :Difficulty: Easy
