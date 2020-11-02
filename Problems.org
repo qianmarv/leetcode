@@ -1339,6 +1339,35 @@ The above output corresponds to the 5 unique BST's shown below:
     /     /       \                 \
    2     1         2                 3
 #+END_QUOTE
+* 101 Symmetric Tree :Tree:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/symmetric-tree/][leetcode]]
+:END:
+** Problem
+Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+
+For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
+
+    1
+   / \
+  2   2
+ / \ / \
+3  4 4  3
+
+
+But the following [1,2,2,null,3,null,3] is not:
+
+    1
+   / \
+  2   2
+   \   \
+   3    3
+
+
+Follow up: Solve it both recursively and iteratively.
+** Solution
+Solution in [[file:101_Symmetric_Tree/Java/Solution.java::/**][Java]].
 * 104 Maximum Depth of Binary Tree :Tree:DFS:
 :PROPERTIES:
 :Difficulty: Easy
