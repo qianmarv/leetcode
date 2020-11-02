@@ -2527,6 +2527,27 @@ Output: false
 - 0 <= s.length <= 100
 - 0 <= t.length <= 10^4
 - Both strings consists only of lowercase characters.
+* 404 Sum of Left Leaves :Tree:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/sum-of-left-leaves/][leetcode]]
+:END:
+** Problem
+Find the sum of all left leaves in a given binary tree.
+
+Example:
+#+BEGIN_EXAMPLE
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
+#+END_EXAMPLE
+** Solution
+Solution in [[file:404_Sum_of_Left_Leaves/Java/Solution.java::class Solution {][Java]].
+
 * 405 Convert a Number to Hexadecimal :Math:
 :PROPERTIES:
 :Difficulty: Easy
