@@ -2556,6 +2556,23 @@ Input: n = 13
 Output: 2
 Explanation: 13 = 4 + 9.
 #+END_EXAMPLE
+* 283 Move Zeroes :Array:TwoPointers:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/move-zeroes/][leetcode]]
+:END:
+** Problem
+Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+Example:
+#+BEGIN_EXAMPLE
+Input: [0,1,0,3,12]
+Output: [1,3,12,0,0]
+#+END_EXAMPLE
+
+*Note:*
+- You must do this in-place without making a copy of the array.
+- Minimize the total number of operations.
 * 300 Longest Increasing Subsequence :BinarySearch:DP:
 :PROPERTIES:
 :Link:     [[https://leetcode.com/problems/longest-increasing-subsequence/description/][leetcode]]
