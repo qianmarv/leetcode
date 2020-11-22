@@ -2547,6 +2547,28 @@ Explanation:
 (2*((3-4)*5)) = -10
 (((2*3)-4)*5) = 10
 #+END_EXAMPLE
+* 242 Valid Anagram :HashTable:Sort:
+** Problem
+Given two strings s and t , write a function to determine if t is an anagram of s.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: s = "anagram", t = "nagaram"
+Output: true
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: s = "rat", t = "car"
+Output: false
+#+END_EXAMPLE
+
+*Note:*
+You may assume the string contains only lowercase alphabets.
+
+*Follow up:*
+What if the inputs contain unicode characters? How would you adapt your solution to such case?
+
 * 257 Binary Tree Path :DFS:
 :PROPERTIES:
 :Difficulty: Easy
