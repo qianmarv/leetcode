@@ -4335,6 +4335,33 @@ Output: "c"
 1. letters has a length in range [2, 10000].
 2. letters consists of lowercase letters, and contains at least 2 unique letters.
 3. target is a lowercase letter.
+* 861 Score After Flipping Matrix
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/score-after-flipping-matrix/][leetcode]]
+:END:
+** Problem
+We have a two dimensional matrix A where each value is 0 or 1.
+
+A move consists of choosing any row or column, and toggling each value in that row or column: changing all 0s to 1s, and all 1s to 0s.
+
+After making any number of moves, every row of this matrix is interpreted as a binary number, and the score of the matrix is the sum of these numbers.
+
+Return the highest possible score.
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: [[0,0,1,1],[1,0,1,0],[1,1,0,0]]
+Output: 39
+Explanation:
+Toggled to [[1,1,1,1],[1,0,0,1],[1,1,1,1]].
+0b1111 + 0b1001 + 0b1111 = 15 + 9 + 15 = 39
+#+END_EXAMPLE
+
+Note:
+- 1 <= A.length <= 20
+- 1 <= A[0].length <= 20
+- A[i][j] is 0 or 1.
 * 922 Sort Array by Parity II :Array:
 :PROPERTIES:
 :Difficulty: Easy
