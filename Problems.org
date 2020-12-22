@@ -1414,6 +1414,30 @@ But the following [1,2,2,null,3,null,3] is not:
 Follow up: Solve it both recursively and iteratively.
 ** Solution
 Solution in [[file:101_Symmetric_Tree/Java/Solution.java::/**][Java]].
+* 103 Binary Tree Zigzag Level Order Traversal :BFS:
+:PROPERTIES:
+:Difficulty: Medium
+:Link:     [[https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/][leetcode]]
+:END:
+** Problem
+Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
+
+For example:
+#+begin_example
+Given binary tree [3,9,20,null,null,15,7],
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its zigzag level order traversal as:
+[
+  [3],
+  [20,9],
+  [15,7]
+]
+#+end_example
+
 * 104 Maximum Depth of Binary Tree :Tree:DFS:
 :PROPERTIES:
 :Difficulty: Easy
@@ -4437,6 +4461,32 @@ Output: "c"
 1. letters has a length in range [2, 10000].
 2. letters consists of lowercase letters, and contains at least 2 unique letters.
 3. target is a lowercase letter.
+* 746 Min Cost Climbing Stairs :DP:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/min-cost-climbing-stairs/][leetcode]]
+:END:
+On a staircase, the i-th step has some non-negative cost cost[i] assigned (0 indexed).
+
+Once you pay the cost, you can either climb one or two steps. You need to find minimum cost to reach the top of the floor, and you can either start from the step with index 0, or the step with index 1.
+
+Example 1:
+#+begin_example
+Input: cost = [10, 15, 20]
+Output: 15
+Explanation: Cheapest is start on cost[1], pay that cost and go to the top.
+#+end_example
+
+Example 2:
+#+begin_example
+Input: cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+Output: 6
+Explanation: Cheapest is start on cost[0], and only step on 1s, skipping cost[3].
+#+end_example
+
+Note:
+- Cost will have a length in the range [2, 1000].
+- Every cost[i] will be an integer in the range [0, 999].
 * 860 Lemonade Change :Greedy:
 :PROPERTIES:
 :Difficulty: Easy
