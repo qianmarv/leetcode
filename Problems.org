@@ -3054,6 +3054,23 @@ Therefore the output is 7.
 What if negative numbers are allowed in the given array?
 How does it change the problem?
 What limitation we need to add to the question to allow negative numbers?
+* 387 First Unique Character in a String
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/first-unique-character-in-a-string/][leetcode]]
+:END:
+** Problem
+Given a string, find the first non-repeating character in it and return its index. If it doesn't exist, return -1.
+
+Examples:
+#+begin_example
+s = "leetcode"
+return 0.
+
+s = "loveleetcode"
+return 2.
+#+end_example
+Note: You may assume the string contains only lowercase English letters.
 
 * 392 Is Subsequence :BinarySearch:DP:Greedy:
 :PROPERTIES:
@@ -3357,7 +3374,7 @@ Return 3. The paths that sum to 8 are:
 ** Solution
 Solution in [[file:437_Path_Sum_III/Java/Solution.java::}][Java]].
 
-* p445 Add Two Numbers II :LinkedList:
+* 445 Add Two Numbers II :LinkedList:
 :PROPERTIES:
 :Difficulty: Medium
 :END:
