@@ -2359,6 +2359,39 @@ Output: 0
 
 *Constraints:*
 - 0 <= n <= 5 * 10^6
+* 205 Isomorphic Strings :HashTable:
+:PROPERTIES:
+:Difficulty: Easy
+:Link:     [[https://leetcode.com/problems/isomorphic-strings/][leetcode]]
+:END:
+** Problem
+Given two strings s and t, determine if they are isomorphic.
+
+Two strings are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.
+
+Example 1:
+#+begin_example
+Input: s = "egg", t = "add"
+Output: true
+#+end_example
+
+Example 2:
+#+begin_example
+Input: s = "foo", t = "bar"
+Output: false
+#+end_example
+
+Example 3:
+#+begin_example
+Input: s = "paper", t = "title"
+Output: true
+#+end_example
+
+*Note:*
+You may assume both s and t have the same length.
+
 * 213 House Robber II :DP:
 :PROPERTIES:
 :Difficulty: Medium
