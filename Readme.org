@@ -1,7 +1,7 @@
 #+TITLE: Leetcode Problems
 #+AUTHOR: Marvin
 
-* 001 Two Sum :Array:HashTable:
+* 001 [[https://github.com/qianmarv/leetcode/blob/master/src/001_Two_Sum/Readme.org][Two Sum]] :Array:HashTable:
 :PROPERTIES:
 :Difficulty: Easy
 :END:
