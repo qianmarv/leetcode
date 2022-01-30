@@ -1,0 +1,7 @@
+(define/contract (two-sum nums target)
+  (-> (listof exact-integer?) exact-integer? (listof exact-integer?))
+    (list 0 1) )
+
+
+
+(two-sum '(1 2 3 5) 7)
