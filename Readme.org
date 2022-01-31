@@ -1,25 +1,44 @@
 #+TITLE: Leetcode Problems
 #+AUTHOR: Marvin
 
-* [[file:src/001_Two_Sum/Readme.org][001 Two Sum]] :Array:HashTable:
+* 001 Two Sum :Array:HashTable:
 :PROPERTIES:
 :Difficulty: Easy
 :END:
-Easy
-Array|HashTable
-* [[file:src/002_Add_Two_Numbers/Readme.org][002 Add Two Numbers]] :LinkedList:
+| Solution   | [[file:src/001_Two_Sum/Readme.org][Link]]      |
+|------------+-----------|
+| Difficulty | Easy      |
+|------------+-----------|
+| Tag        | Array     |
+|            | HashTable |
+|------------+-----------|
+
+* 002 Add Two Numbers :LinkedList:
 :PROPERTIES:
 :Difficulty: Medium
 :END:
 Medium
 LinkedList
+| Solution   | [[file:src/002_Add_Two_Numbers/Readme.org][Link]]        |
+|------------+-------------|
+| Difficulty | Medium      |
+|------------+-------------|
+| Tag        | Linked List |
+|------------+-------------|
 
-* [[file:src/003_Longest_Substring/Readme.org][003 Longest Substring]] :String:TwoPointers:
+* 003 Longest Substring :String:TwoPointers:
 :PROPERTIES:
 :Difficulty: Medium
 :END:
 Medium
 String|Tow Pointers
+| Solution   | [[file:src/003_Longest_Substring/Readme.org][Link]]       |
+|------------+------------|
+| Difficulty | Medium     |
+|------------+------------|
+| Tag        | String     |
+|            | LinkedList |
+|------------+------------|
 
 * 004 Median of Two Sorted Arrays :Array:BinarySearch:DivedAndConquer:
 :PROPERTIES:
