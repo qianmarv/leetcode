@@ -1,18 +1,26 @@
 #+TITLE: Leetcode Problems
 #+AUTHOR: Marvin
 
-* 001 [[https://github.com/qianmarv/leetcode/blob/master/src/001_Two_Sum/Readme.org][Two Sum]] :Array:HashTable:
+* [[file:src/001_Two_Sum/Readme.org][001 Two Sum]] :Array:HashTable:
 :PROPERTIES:
 :Difficulty: Easy
 :END:
-* 002 [[https://github.com/qianmarv/leetcode/blob/master/src/002_Add_Two_Numbers/Readme.org][Add Two Numbers]] :LinkedList:
+Easy
+Array|HashTable
+* [[file:src/002_Add_Two_Numbers/Readme.org][002 Add Two Numbers]] :LinkedList:
 :PROPERTIES:
 :Difficulty: Medium
 :END:
-* 003 Longest Substring :String:TwoPointers:
+Medium
+LinkedList
+
+* [[file:src/003_Longest_Substring/Readme.org][003 Longest Substring]] :String:TwoPointers:
 :PROPERTIES:
 :Difficulty: Medium
 :END:
+Medium
+String|Tow Pointers
+
 * 004 Median of Two Sorted Arrays :Array:BinarySearch:DivedAndConquer:
 :PROPERTIES:
 :Difficulty: Hard
