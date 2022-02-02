@@ -1,6 +1,6 @@
 #+TITLE: Median of Two Sorted Arrays
 
-** Problem
+* Problem
 There are two sorted arrays nums1 and nums2 of size m and n respectively.
 
 Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
@@ -23,7 +23,7 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 #+END_EXAMPLE
 
-** Solution
+* Solution
 The straight forward idea is to repeatly minus the divisor from dividend according to definition of division. It surely works, the time complexity is n(divisor/dividend).
 
 We can, somehow, think about that with repeatly do the step of ~let sum=divide, do sum += sum~, we could accelarate the minus. The next question is how we count how many times we've done the minus, answer is we setup another synced stack to calculate the repeat double of *one*. So that when we finish the minus, we just need to check the stack of *one*, and sum all of them.
