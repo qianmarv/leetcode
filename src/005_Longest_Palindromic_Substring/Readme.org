@@ -1,0 +1,18 @@
+#+TITLE: Longest Palindromic Substring
+
+* Problem
+Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+*Example 1*
+#+BEGIN_EXAMPLE
+Input: "babad"
+Output: "bab"
+Note: "aba" is also a valid answer.
+#+END_EXAMPLE
+
+*Example 2*
+#+BEGIN_EXAMPLE
+Input: "cbbd"
+Output: "bb"
+#+END_EXAMPLE
+
+* Solution
