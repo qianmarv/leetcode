@@ -32,3 +32,15 @@
 (add-two-numbers '(1 3 3) '(8 7 9))
 
 (add-two-numbers '(1 3 3 3 3 3 3) '(1 1 1 2 2))
+
+(struct list-node
+  (val next))
+
+(define (factorial x)
+  (let zp ([x x]
+           [acc 1])
+    (if (zero? x)
+        acc
+        (zp (sub1 x) (* x acc)))))
+
+(factorial 4)

@@ -44,3 +44,24 @@
     ;; 如果总长度为奇数，则中位数 = (len+1)/2 个数
     ;; 如果总长度为偶数，则中位数 = (len/2,len/2+1)/2
     ;; 要达到O(log(m+n))，遍历需要改为二分搜索
+
+;; 二分查找
+(define (my-find nums target)
+  (define binary-find
+    (lambda (lo hi)
+      (let ([mid (+ lo (floor (/ (- hi lo) 2)))])
+        (cond
+         [(> lo hi) -1]
+         [(= target ())]))))
+  (binary-find 0 (length nums)))
+
+(floor (/ 7 2))
+()
+(define a '(1 2 3 4 5 6 7 8 9 10))
+(list-ref a 5)
+(vector-ref (list->vector a) 0)
+
+(length a)
+;; low = 0, high = 9 => mid = 5
+;; if(a[5] == target) find
+;; else if(a[5] < target) low = mid, recalculate mid
