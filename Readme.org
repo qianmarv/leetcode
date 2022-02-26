@@ -88,7 +88,6 @@ LinkedList
 | Tag        | Math   |
 |------------+--------|
 
-
 * 008 String to Integer (atoi)
 :PROPERTIES:
 :Difficulty: Medium
@@ -106,29 +105,13 @@ LinkedList
 :PROPERTIES:
 :Difficulty: Easy
 :END:
-** Problem
-Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+| Solution   | [[file:src/009_Palindrome_Number/Readme.org][Link]] |
+|------------+------|
+| Difficulty | Easy |
+|------------+------|
+| Tag        | Math |
+|------------+------|
 
-*Example 1:*
-#+BEGIN_EXAMPLE
-Input: 121
-Output: true
-#+END_EXAMPLE
-
-*Example 2:*
-#+BEGIN_EXAMPLE
-Input: -121
-Output: false
-Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
-#+END_EXAMPLE
-
-*Example 3:*
-#+BEGIN_EXAMPLE
-Input: 10
-Output: false
-Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
-#+END_EXAMPLE
-** Solution
 * 010 Regular Expression Matching :String:DP:Backtracking:
 :PROPERTIES:
 :Difficulty: Hard
