@@ -143,142 +143,41 @@ LinkedList
 :Difficulty: Medium
 :Link:     [[https://leetcode.com/problems/integer-to-roman/][leetcode]]
 :END:
-** Problem
-Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
-
-Symbol       Value
-I             1
-V             5
-X             10
-L             50
-C             100
-D             500
-M             1000
-For example, two is written as II in Roman numeral, just two one's added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.
-
-Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
-
-I can be placed before V (5) and X (10) to make 4 and 9.
-X can be placed before L (50) and C (100) to make 40 and 90.
-C can be placed before D (500) and M (1000) to make 400 and 900.
-Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
-
-Example 1:
-#+BEGIN_EXAMPLE
-Input: 3
-Output: "III"
-#+END_EXAMPLE
-
-Example 2:
-#+BEGIN_EXAMPLE
-Input: 4
-Output: "IV"
-#+END_EXAMPLE
-
-Example 3:
-#+BEGIN_EXAMPLE
-Input: 9
-Output: "IX"
-#+END_EXAMPLE
-
-Example 4:
-#+BEGIN_EXAMPLE
-Input: 58
-Output: "LVIII"
-Explanation: L = 50, V = 5, III = 3.
-#+END_EXAMPLE
-
-Example 5:
-#+BEGIN_EXAMPLE
-Input: 1994
-Output: "MCMXCIV"
-Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
-#+END_EXAMPLE
+| Solution   | [[file:src/012_Integer_to_Roman/Readme.org][Link]]   |
+|------------+--------|
+| Difficulty | Medium |
+|------------+--------|
+| Tag        | Hash   |
+|            | Math   |
+|            | String |
+|------------+--------|
 
 * 013 Roman to Integer :Math:String:
 :PROPERTIES:
 :Difficulty: Easy
 :Link:     [[https://leetcode.com/problems/roman-to-integer/][leetcode]]
 :END:
-** Problem
-Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
-#+BEGIN_QUOTE
-Symbol       Value
-I             1
-V             5
-X             10
-L             50
-C             100
-D             500
-M             1000
-#+END_QUOTE
+| Solution   | [[file:src/013_Roman_to_Integer/Readme.org][Link]]   |
+|------------+--------|
+| Difficulty | Easy   |
+|------------+--------|
+| Tag        | Hash   |
+|            | Math   |
+|            | String |
+|------------+--------|
 
-For example, two is written as II in Roman numeral, just two one's added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.
-
-Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
-
-I can be placed before V (5) and X (10) to make 4 and 9.
-X can be placed before L (50) and C (100) to make 40 and 90.
-C can be placed before D (500) and M (1000) to make 400 and 900.
-Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.
-
-Example 1:
-#+BEGIN_EXAMPLE
-Input: "III"
-Output: 3
-#+END_EXAMPLE
-
-Example 2:
-#+BEGIN_EXAMPLE
-Input: "IV"
-Output: 4
-#+END_EXAMPLE
-
-Example 3:
-#+BEGIN_EXAMPLE
-Input: "IX"
-Output: 9
-#+END_EXAMPLE
-
-Example 4:
-#+BEGIN_EXAMPLE
-Input: "LVIII"
-Output: 58
-Explanation: L = 50, V= 5, III = 3.
-#+END_EXAMPLE
-
-Example 5:
-#+BEGIN_EXAMPLE
-Input: "MCMXCIV"
-Output: 1994
-Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
-#+END_EXAMPLE
 * 014 Longest Common Prefix :String:
 :PROPERTIES:
 :Difficulty: Easy
 :Link:     [[https://leetcode.com/problems/longest-common-prefix/][leetcode]]
 :END:
-** Problem
-Write a function to find the longest common prefix string amongst an array of strings.
+| Solution   | [[file:src/014_Longest_Common_Prefix/Readme.org][Link]]   |
+|------------+--------|
+| Difficulty | Easy   |
+|------------+--------|
+| Tag        |String  |
+|------------+--------|
 
-If there is no common prefix, return an empty string "".
-
-Example 1:
-#+BEGIN_EXAMPLE
-Input: ["flower","flow","flight"]
-Output: "fl"
-#+END_EXAMPLE
-
-Example 2:
-#+BEGIN_EXAMPLE
-Input: ["dog","racecar","car"]
-Output: ""
-Explanation: There is no common prefix among the input strings.
-#+END_EXAMPLE
-
-*Note:*
-
-All given inputs are in lowercase letters ~a-z~.
 * 017 Letter Combinations of a Phone Number
 :PROPERTIES:
 :Difficulty: Medium

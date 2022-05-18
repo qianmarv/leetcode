@@ -1,0 +1,23 @@
+#+TITLE: Readme
+
+* Problem
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+Example 1:
+#+BEGIN_EXAMPLE
+Input: ["flower","flow","flight"]
+Output: "fl"
+#+END_EXAMPLE
+
+Example 2:
+#+BEGIN_EXAMPLE
+Input: ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+#+END_EXAMPLE
+
+*Note:*
+
+All given inputs are in lowercase letters ~a-z~.
