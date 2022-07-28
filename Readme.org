@@ -100,7 +100,6 @@ LinkedList
 | Tag        | String |
 |------------+--------|
 
-
 * 009 Palindrome Number :Math:
 :PROPERTIES:
 :Difficulty: Easy
@@ -4445,6 +4444,9 @@ Explanation: There is no such common subsequence, so the result is 0.
 - The input strings consist of lowercase English characters only.
 ** Solution
 Solution in [[file:1143_Longest_Common_Subsequence/Java/Solution.java][Java]].
+* 1331 Rank Transform of an Array :HashTable:Array:
+- [[https://leetcode.cn/problems/rank-transform-of-an-array/][leetcode.cn]]
+- [[./src/1331_Rank_Transform_of_an_Array/CSharp/Solution.cs][Solution in CSharp]]
 * 1370 Increasing Decreasing String :String:Sort:
 :PROPERTIES:
 :Difficulty: Easy
