@@ -3648,6 +3648,9 @@ Given tree t:
 Return false.
 #+END_EXAMPLE
 
+* 593 Valid Squre
+- [[https://leetcode.cn/problems/valid-square/][Leetcode.cn]]
+
 * 605 Can Place Flowers :Array:
 :PROPERTIES:
 :Difficulty: Easy
