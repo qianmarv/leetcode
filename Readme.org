@@ -4328,6 +4328,8 @@ Explanation: [4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted.
 - 2 <= A.length <= 20000
 - A.length % 2 == 0
 - 0 <= A[i] <= 1000
+* 952 Largest Component Size by Common Factor
+- [[https://leetcode.cn/problems/largest-component-size-by-common-factor/][Leetcode.cn]]
 * 1030 Matrix Cells in Distance Order :Sort:
 :PROPERTIES:
 :Difficulty: Easy
